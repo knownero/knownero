@@ -2955,6 +2955,10 @@ uint64_t Blockchain::get_dynamic_per_kb_fee(uint64_t block_reward, size_t median
   uint64_t qlo = (lo + mask - 1) / mask * mask;
   MDEBUG("lo " << print_money(lo) << ", qlo " << print_money(qlo) << ", mask " << mask);
 
+  if(qlo <= 1) {
+      qlo = 1;
+  }
+
   return qlo;
 }
 
