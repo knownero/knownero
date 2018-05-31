@@ -169,7 +169,12 @@ namespace cryptonote
     {
       return true;
     }
-      return true;
+    ADD_CHECKPOINT(0,     "f8459388266487ad9ed62da90d0b6f47ec31c0fda519bc97763f9b552b2f3e9d");
+    ADD_CHECKPOINT(1,     "47709a2e344bf6bda52aaf4a6815f452e786063b321afcc4decf278196a17ea0");
+    ADD_CHECKPOINT(10,    "2ee2c093b5a9f430f305ef1f3219b5e798c77ba7d409477e87bd2fce839a6849");
+    ADD_CHECKPOINT(100,   "10f2d7885f5b60aee8c8a3c82a58bd059492d13a339a774134b2e6cdeaecb37a");
+    ADD_CHECKPOINT(1000,  "86010113fb8643effb961990edf9aefa2121c68258c1426f3dff5f2a863183c9");
+    return true;
   }
 
   bool checkpoints::load_checkpoints_from_json(const std::string &json_hashfile_fullpath)
